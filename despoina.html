@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Despoina</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="images/logo.png" />
+    <script src="https://kit.fontawesome.com/4e692b66fb.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div id="main-container">
+        <header>
+            <nav>
+                <div>
+                    <a class="navbar-brand btn" href="#"> <span class="text">Despoina</span>
+                </div>
+                <div>
+                    <ul>
+                        <li>
+                            <a href="#sc"> <span><span>Strength
+                                        Checker</span><span></span></span></a>
+                        </li>
+                        <li>
+                            <a href="#pg"> <span><span>Password
+                                        Generator</span><span></span></span> </a>
+                        </li>
+                        <li>
+                            <span><span><a href="#">Breached</a></span><span></span></span>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+        <div>
+            <div>
+                <div>
+                    <div>
+                        <div>
+                            <h1>Despoina</h1>
+                            <p>A Web Based Password Tool</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div>
+            <div>
+                <div>
+                    <div>
+                        <section>
+                            <h2 align="center"><span>Tips</span></h2>
+                            <br>
+                            <div>
+                                <h3><i class="fas fa-caret-right"></i> WHY IS IMPORTANT TO HAVE STRONG PASSWORD</h3>
+                                Passwords provide the first line of defense against unauthorized access to your computer
+                                and
+                                personal
+                                information. The stronger your password, the more protected your computer will be from
+                                hackers
+                                and
+                                malicious software. You should maintain strong passwords for all accounts on your
+                                computer.
+                            </div>
+                            <br><br>
+                            <div>
+                                <h3><i class="fas fa-caret-right"></i> TIPS TO MAKE A STRONG PASSWORD</h3>
+                                <ol>
+                                    <li>Use a unique password for each of your important accounts (i.e.
+                                        email and online
+                                        banking). Do
+                                        not use
+                                        the same password across multiple accounts.</li>
+                                    <li>Your password should be at least 8 characters long. Password should
+                                        consist of
+                                        lowercase
+                                        and
+                                        uppercase
+                                        letters, numbers and symbols. A long password will offer more
+                                        protection than a
+                                        short
+                                        password
+                                        if it is
+                                        properly constructed.</li>
+                                    <li>Do not use personal information such as your name, age, date of
+                                        birth, child’s name,
+                                        pet’s
+                                        name, or
+                                        favorite color/song when constructing your password.</li>
+                                    <li>Avoid consecutive keyboard combinations</li>
+                                </ol>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <div>
+                    <div>
+                        <div>
+                            <section>
+                                <h2 align="center"><span>Why</span></h2>
+                                <br>
+                                <div style="width:60%; margin-left: auto; margin-right: auto;">
+                                    <h3><i class="fas fa-caret-right"></i> WHY Despoina?</h3>
+                                    <p>It is the Ultimate Web based password tool. Our tool provides Strength Checker,
+                                        Password Generator, and Breached Password Checker all in one place.</p>
+                                </div>
+                                <br><br>
+                                <div style="width:60%; margin-left: auto; margin-right: auto;">
+                                    <h3><i class="fas fa-caret-right"></i> TIPS TO MAKE A STRONG PASSWORD</h3>
+                                    <p>Have a password, check its strength.<br>
+                                        Dont have a password, get one with our passowrd generator.<br>
+                                        Want to see if your password has ever been pawned off? use the Breached password
+                                        tool.</p>
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <div>
+                    <div>
+                        <div>
+                            <h2 align=center><i class="fas fa-key"></i> <span class="text-shadow">PASSWORD
+                                    GENERATOR</span></h2>
+                            <section>
+                                <p>Thinking a strong password is a tiring process. Use this to generate an Unique and
+                                    strong password.</p>
+                                <div>
+                                    <div class="option">
+                                        <label>Password Length: </label>
+                                        <input type="number" id="pglength" min="8" max="20" value="8">
+                                    </div>
+                                    <br>
+                                    <div class="check">Include Symbol: <span class="checkb">
+                                            <label>
+                                                <input type="checkbox" id="symbol">
+                                            </label>
+                                        </span>
+                                    </div>
+                                </div>
+                                <br>
+                                <form id="gen">
+                                    <input name="finalpass" id="final_pass" type="text" class="output"
+                                        readonly="readonly" />
+                                    <button type="button" onclick="GenPass()" class="butto">GENERATE</button>
+                                </form>
+                                <script>
+
+                                </script>
+                            </section>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <div>
+                    <div>
+                        <div>
+                            <section>
+                                <h2><i class="fas fa-unlock-alt"></i> <span>PASSWORD STRENGTH
+                                        CHECKER</span>
+                                </h2>
+                                <p>Want to know how is your password weak, strong or average? Enter your password and
+                                    check for yourself.</p>
+                                <form class="test" style="margin-top: 13%;">
+                                    <input type="text" name="password" placeholder="Password" class="pin" id="y">
+                                    <button type="submit" calue="submit" class="butto">Submit</button>
+                                </form>
+                                <div class="response"></div>
+                            </section>
+                            <script>
+
+                            </script>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <div>
+                    <div>
+                        <div>
+                            <section>
+                                <h2 align="center"><span>Why</span></h2>
+                                <br>
+                                <div style="width:60%; margin-left: auto; margin-right: auto;">
+                                    <h3><i class="fas fa-caret-right"></i> Breached password Tool</h3>
+                                    <p>Check If your password has ever been pawned.</p>
+                                </div>
+                                <br><br>
+
+                            </section>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <footer>
+                <div>
+                    <span>#</span>
+                </div>
+
+                <div>
+                    <div>
+                        <div>
+                            ACE&nbsp;<span>@twitter</span>
+                        </div>
+
+                        <div>
+                            <i class="fab fa-linkedin-in"></i>&nbsp;<span>linkedin</span>
+                        </div>
+
+                        <div>
+                            <i class="fab fa-github"></i>&nbsp;<span>github</span>
+                        </div>
+                    </div>
+                    <br>
+                    <br>
+                    <span>&copy; ACE CYBER SECURITY TEAM</span>
+                </div>
+
+                <div>
+                    <span><a href="#">Despoina</a></span>
+                </div>
+            </footer>
+        </div>
+
+</body>
+<script src="script.js"></script>
+
+</html>
