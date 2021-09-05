@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+    <header class="bg-dark">
+        <nav class="navbar navbar-expand-sm navbar-dark">
+            <div><a class="navbar-brand" href="#">Despiona</a></div>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Strength Checker</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Password Generator</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Breached</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container" style="margin-top:30px">
+        <div class="jumbotron text-center" style="margin-bottom:0">
+            <div class="row">
+                <div class="col">
+                    <section>
+                        <h3>PASSWORD GENERATOR</h3>
+                        <div class="options">
+                            <div class="option">
+                                <label>Password Length </label>
+                                <input type="number" id="pglength" min="8" max="20" value="8">
+                            </div>
+                            <div class="check">Include Symbol</div>
+                            <div class="checkb">
+                                <label>
+                                    <input type="checkbox" id="symbol">
+                                </label>
+                            </div>
+                        </div>
+                        <br>
+                        <input name="finalpass" id="final_pass" type="text" ;>
+                        <button type="button" onclick="GenPass()">GENERATE</button>
+                        <script>
+                            function GenPass() {
+                                var len = document.getElementById("pglength").value;
+                                var result = document.getElementById("final_pass");
+                                function arraycreation(srt, end) {
+                                    const arr = [];
+                                    for (let i = srt; i <= end; i++)
+                                        arr.push(i);
+                                    return arr;
+                                }
+                                var codes = arraycreation(65, 90).concat(arraycreation(97, 122)).concat(arraycreation(48, 57));
+                                if (document.getElementById("symbol").checked)
+                                    codes = codes.concat(arraycreation(33, 47)).concat(arraycreation(58, 64)).concat(arraycreation(91, 96)).concat(arraycreation(123, 126));
+                                var password = [];
+                                var i;
+                                for (i = 0; i < len; i++) {
+                                    const char1 = codes[Math.floor(Math.random() * codes.length)];
+                                    password.push(String.fromCharCode(char1));
+                                }
+                                password = password.join('');
+                                result.value = password;
+                            }
+                        </script>
+                    </section>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <footer>
+        <div class="jumbotron text-left" style="margin-bottom:0">
+            <span>All Rights Reserved</span>
+        </div>
+
+        <div class="jumbotron text-center" style="margin-bottom:0">
+            <span>&copy;ACE CYBER SECURITY TEAM</span>
+        </div>
+
+        <div class="jumbotron text-right" style="margin-bottom:0">
+            <span>About</span>
+        </div>
+    </footer>
+
+</body>
+<script src="script.js"></script>
+
+
+
+</html>
