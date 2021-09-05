@@ -192,27 +192,7 @@ form.addEventListener('submit', e => {
     }
 })
 
-function GenPass() {
-    var len = document.getElementById("pglength").value;
-    var result = document.getElementById("final_pass");
-    function arraycreation(srt, end) {
-        const arr = [];
-        for (let i = srt; i <= end; i++)
-            arr.push(i);
-        return arr;
-    }
-    var codes = arraycreation(65, 90).concat(arraycreation(97, 122)).concat(arraycreation(48, 57));
-    if (document.getElementById("symbol").checked)
-        codes = codes.concat(arraycreation(33, 47)).concat(arraycreation(58, 64)).concat(arraycreation(91, 96)).concat(arraycreation(123, 126));
-    var password = [];
-    var i;
-    for (i = 0; i < len; i++) {
-        const char1 = codes[Math.floor(Math.random() * codes.length)];
-        password.push(String.fromCharCode(char1));
-    }
-    password = password.join('');
-    result.value = password;
-}
+
 
 function check() {
     const form = document.querySelector('.teut');
