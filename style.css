@@ -5,7 +5,7 @@
 }
 
 section#gs {
-    padding: 5% 0 5% 0;
+    padding: 8% 0 8% 0;
 }
 
 span#cpy {
@@ -108,10 +108,6 @@ body {
   z-index: -1;
 }
 
-#main-container {
- /* background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(70,79,82,1) 100%); */
-}
-
 .top {
   width: 75px;
   height: 75px;
@@ -182,7 +178,7 @@ h6 {
 
 h1,
 .h1 {
-  font-size: clamp(4.5rem, 1rem + 10vw, 8rem);
+  font-size: clamp(2.8rem, 1rem + 10vw, 8rem);
 }
 
 h2,
@@ -420,10 +416,9 @@ ul.tip {
 .pin {
   display: inline-flex;
   height: 5rem;
-  max-width: 25rem;
+  max-width: 18rem;
   border-radius: 10px;
   padding: 0.5rem 0.5rem 0.5rem 2rem;
-  /* margin-right: 5%; */
   margin-left: auto;
   margin-right: auto;
   border: 5px solid #aeaeae;
@@ -443,7 +438,8 @@ ul.tip {
 }
 
 .line {
-  width: 150px;
+  max-width: 150px;
+  min-width: 50px;
   height: 5px;
   border-radius: 10px;
   background: #aeaeae;
@@ -601,10 +597,11 @@ button:active{
 
 footer {
   margin-bottom: max(-6%, 5%);
-  margin-bottom: min(-16%, 5%);
+  margin-bottom: min(-22%, 5%);
   display: flex;
   width: 100%;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 footer .jumbotron {
