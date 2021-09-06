@@ -32,12 +32,12 @@ html {
 }
 
 #gen{
-    /* margin-left: -10%; */
     margin-left: auto;
     margin-right: auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    width: 70%;
 }
 
 .bar {
@@ -45,9 +45,12 @@ html {
 }
 
 .test {
-    margin-bottom: 7%;
+   margin-left: auto;
+    margin-right: auto;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    width: 70%;
 }
 
 .jumbotron {
@@ -156,7 +159,7 @@ body {
 
 body a {
   text-decoration: none;
-  color: var(--white-color);
+  /* color: var(--white-color); */
 }
 
 p {
@@ -416,10 +419,11 @@ ul.tip {
 .pin {
   display: inline-flex;
   height: 5rem;
-  max-width: 18rem;
+  max-width: 40rem;
+  min-width: 16rem;
   border-radius: 10px;
   padding: 0.5rem 0.5rem 0.5rem 2rem;
-  margin-left: auto;
+  /* margin-left: auto; */
   margin-right: auto;
   border: 5px solid #aeaeae;
   margin-top: 9%;
@@ -427,7 +431,8 @@ ul.tip {
 
 .output {
   height: 5rem;
-  max-width: 20rem;
+  max-width: 40rem;
+  min-width: 18rem;
   border-radius: 10px;
   padding: 0.5rem 0.5rem 0.5rem 2rem;
   margin-top: 5%;
@@ -600,7 +605,6 @@ footer {
   display: flex;
   width: 100%;
   justify-content: space-between;
-  flex-wrap: wrap;
 }
 
 footer .jumbotron {
@@ -613,9 +617,24 @@ footer .jumbotron {
   justify-content: center;
 }
 
+.jumbotron.text-left a {
+  text-decoration: none;
+  color: #fff;
+}
+
 .jumbotron.text-right a {
   text-decoration: none;
   color: #fff;
+}
+
+.jumbotron .text-center a {
+  text-decoration: none;
+  color: #000;
+}
+
+.social-bttn a:hover{
+  text-decoration: none;
+  color: #000;
 }
 
 footer .jumbotron:nth-child(2) {
@@ -679,4 +698,10 @@ footer .jumbotron:nth-child(2) {
 
 #github {
 	color: #333;
+}
+
+@media (max-width: 786px) {
+  footer {
+    flex-wrap: wrap;
+  }
 }

@@ -49,70 +49,70 @@ form.addEventListener('submit', e => {
 
     else if ((len > 4) && (len <= 7) && (SC == 0) && (WC === 0) && (NC == 0)) {
         response.textContent = "Medium";
-        response.style.color = "yellow";
-        document.getElementById("y").style.borderBottomColor = "yellow";
-        document.getElementById("bar-1").style.background = "yellow";
-        document.getElementById("bar-2").style.background = "yellow";
+        response.style.color = "#f5e642";
+        document.getElementById("y").style.borderBottomColor = "#f5e642";
+        document.getElementById("bar-1").style.background = "#f5e642";
+        document.getElementById("bar-2").style.background = "#f5e642";
         document.getElementById("bar-3").style.background = "gray";
         tip.innerHTML = "<li>Password should more than 7 characters.</li><br><li>It should include special characters.</li><br><li>It should include Uppercase alphabets</li><br><li>It should include Numbers</li>";
     }
 
     else if ((len > 4) && (len <= 7) && (SC == 0) && (WC === 0)) {
         response.textContent = "Medium";
-        response.style.color = "yellow";
-        document.getElementById("y").style.borderBottomColor = "yellow";
-        document.getElementById("bar-1").style.background = "yellow";
-        document.getElementById("bar-2").style.background = "yellow";
+        response.style.color = "#f5e642";
+        document.getElementById("y").style.borderBottomColor = "#f5e642";
+        document.getElementById("bar-1").style.background = "#f5e642";
+        document.getElementById("bar-2").style.background = "#f5e642";
         document.getElementById("bar-3").style.background = "gray";
         tip.innerHTML = "<li>Password should more than 7 characters.</li><br><li>It should include special characters.</li><br><li>It should include Uppercase alphabets</li>";
     }
 
     else if ((len > 4) && (len <= 7) && (WC === 0) && (NC == 0)) {
         response.textContent = "Medium";
-        response.style.color = "yellow";
-        document.getElementById("y").style.borderBottomColor = "yellow";
-        document.getElementById("bar-1").style.background = "yellow";
-        document.getElementById("bar-2").style.background = "yellow";
+        response.style.color = "#f5e642";
+        document.getElementById("y").style.borderBottomColor = "#f5e642";
+        document.getElementById("bar-1").style.background = "#f5e642";
+        document.getElementById("bar-2").style.background = "#f5e642";
         document.getElementById("bar-3").style.background = "gray";
         tip.innerHTML = "<li>Password should more than 7 characters.</li><br><li>It should include Uppercase alphabets</li><br><li>It should include Numbers</li>";
     }
 
     else if ((len > 4) && (len <= 7) && (SC == 0) && (NC == 0)) {
         response.textContent = "Medium";
-        response.style.color = "yellow";
-        document.getElementById("y").style.borderBottomColor = "yellow";
-        document.getElementById("bar-1").style.background = "yellow";
-        document.getElementById("bar-2").style.background = "yellow";
+        response.style.color = "#f5e642";
+        document.getElementById("y").style.borderBottomColor = "#f5e642";
+        document.getElementById("bar-1").style.background = "#f5e642";
+        document.getElementById("bar-2").style.background = "#f5e642";
         document.getElementById("bar-3").style.background = "gray";
         tip.innerHTML = "<li>Password should more than 7 characters.</li><br><li>It should include special characters.</li><br><li>It should include Numbers</li>";
     }
 
     else if ((len > 4) && (len <= 7) && (SC == 0)) {
         response.textContent = "Medium";
-        response.style.color = "yellow";
-        document.getElementById("y").style.borderBottomColor = "yellow";
-        document.getElementById("bar-1").style.background = "yellow";
-        document.getElementById("bar-2").style.background = "yellow";
+        response.style.color = "#f5e642";
+        document.getElementById("y").style.borderBottomColor = "#f5e642";
+        document.getElementById("bar-1").style.background = "#f5e642";
+        document.getElementById("bar-2").style.background = "#f5e642";
         document.getElementById("bar-3").style.background = "gray";
         tip.innerHTML = "<li>Password should more than 7 characters.</li><br><li>It should include special characters.</li>";
     }
 
     else if ((len > 4) && (len <= 7) && (WC === 0)) {
         response.textContent = "Medium";
-        response.style.color = "yellow";
-        document.getElementById("y").style.borderBottomColor = "yellow";
-        document.getElementById("bar-1").style.background = "yellow";
-        document.getElementById("bar-2").style.background = "yellow";
+        response.style.color = "#f5e642";
+        document.getElementById("y").style.borderBottomColor = "#f5e642";
+        document.getElementById("bar-1").style.background = "#f5e642";
+        document.getElementById("bar-2").style.background = "#f5e642";
         document.getElementById("bar-3").style.background = "gray";
         tip.innerHTML = "<li>Password should more than 7 characters.</li><br><li>It should include Uppercase alphabets</li>";
     }
 
     else if ((len > 4) && (len <= 7) && (NC == 0)) {
         response.textContent = "Medium";
-        response.style.color = "yellow";
-        document.getElementById("y").style.borderBottomColor = "yellow";
-        document.getElementById("bar-1").style.background = "yellow";
-        document.getElementById("bar-2").style.background = "yellow";
+        response.style.color = "#f5e642";
+        document.getElementById("y").style.borderBottomColor = "#f5e642";
+        document.getElementById("bar-1").style.background = "#f5e642";
+        document.getElementById("bar-2").style.background = "#f5e642";
         document.getElementById("bar-3").style.background = "gray";
         tip.innerHTML = "<li>Password should more than 7 characters.</li><br><li>It should include Numbers</li>";
     }
