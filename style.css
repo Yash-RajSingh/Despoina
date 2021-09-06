@@ -438,8 +438,7 @@ ul.tip {
 }
 
 .line {
-  max-width: 150px;
-  min-width: 50px;
+  width: clamp(50px, 10px + 10vw, 150px);
   height: 5px;
   border-radius: 10px;
   background: #aeaeae;
