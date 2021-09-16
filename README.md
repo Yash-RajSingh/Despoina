@@ -54,12 +54,6 @@ To be fully secured, we suggest generating *different passwords* for different a
 **Password managers** can help you easily manage these passwords. Some of them will even let you autofil it whenever needed. So you end up saving one password of the respective password manager only. 
 
 ---
-## Feedback
-
-If you have any query or feedback, please reach out to us at galahad45202@gmail.com!
-
-
----
 
 ## License
 
