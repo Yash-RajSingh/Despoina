@@ -1,25 +1,18 @@
 
 # DESPONIA - All in one password tool
 
-This tool will save you against hacking and help you secure all your accounts easily.  
+This tool will save you against hacking and help you secure all your accounts.  
 
 > Treat your password like your toothbrush. Don't let anybody else use it, and get a new one every six months.
 
-Try it out here : [Despoina](https://yash-rajsingh.github.io/Despoina/)
+## Try it out here : [Despoina](https://yash-rajsingh.github.io/Despoina/)
 
-
-
-
-## Contents
-
-
-[Features](#features)
-
-[FAQ](#faq)
-
-[Feedback](#feedback)
-
-[License](#license)
+---
+#### Tech-Stack used :
+  ![HTML 5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+  ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+  ![JS](https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E)
+  
 
 ---
 
